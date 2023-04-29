@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import element from "./assets/Group 3.svg";
+import element from "../assets/Group 3.svg";
 import { useNavigate } from "react-router-dom";
 
 export default function GetStarted() {
