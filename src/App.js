@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Routes, Route } from "react-router-dom";
-import GetStarted from "./GetStarted";
-import SignIn from "./SignIn";
+import GetStarted from "./components/GetStarted";
+import SignIn from "./components/SignIn";
 function App() {
   return (
     <Container>
