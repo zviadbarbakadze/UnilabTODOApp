@@ -1,13 +1,13 @@
 import React from "react";
-import { useContext } from "react";
 
 import { Navigate } from "react-router-dom";
-import { AuthContext } from "./Auth";
 
 export default function Require({ children }) {
-  const { user } = useContext(AuthContext);
+  const data = localStorage.getItem("profile");
 
-  if (!user) {
+  const profile = JSON.parse(data);
+
+  if (profile === null) {
     return <Navigate to="/signin" />;
   }
   return children;

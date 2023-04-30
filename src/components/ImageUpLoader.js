@@ -55,6 +55,3 @@ const Icon = styled.img`
   right: 0;
   margin: 0 auto;
 `;
-// const Image = styled.img`
-//   width: 30px;
-// `;

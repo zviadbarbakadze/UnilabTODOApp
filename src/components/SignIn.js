@@ -14,7 +14,8 @@ export default function SignIn() {
 
   const navigate = useNavigate();
 
-  const handleLogin = () => {
+  const handleLogin = (e) => {
+    e.preventDefault();
     if (user && imagePreview) {
       navigate("/todo");
       localStorage.setItem("profile", JSON.stringify({ user, imagePreview }));
@@ -121,4 +122,5 @@ const Button = styled.button`
 `;
 const ErrorMessage = styled.p`
   color: red;
+  text-align: center;
 `;
