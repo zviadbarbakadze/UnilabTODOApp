@@ -10,5 +10,6 @@ export default function Require({ children }) {
   if (profile === null) {
     return <Navigate to="/signin" />;
   }
+
   return children;
 }

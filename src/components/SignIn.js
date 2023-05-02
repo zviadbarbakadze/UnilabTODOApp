@@ -11,6 +11,7 @@ export default function SignIn() {
   const [error, setError] = useState(false);
   const [imageError, setImageError] = useState(false);
   const { imagePreview, user, setUser } = useContext(AuthContext);
+  const isButtonDisabled = true;
 
   const navigate = useNavigate();
 

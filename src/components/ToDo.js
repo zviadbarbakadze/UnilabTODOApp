@@ -1,13 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import Nav from "./Nav";
+import MakeTodoInput from "./MakeTodoInput";
 
 export default function ToDo() {
   return (
-    <Container>
+    <>
       <Nav />
-    </Container>
+      <Container>
+        <MakeTodoInput />
+      </Container>
+    </>
   );
 }
 
-const Container = styled.div``;
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;

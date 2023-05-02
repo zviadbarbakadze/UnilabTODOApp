@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import { AuthContext } from "./Auth";
 
 export default function Nav() {
+  const { setImagePreview, setUser, setTodo } = useContext(AuthContext);
   const navigate = useNavigate();
   const data = localStorage.getItem("profile");
 
   const profile = JSON.parse(data);
-  console.log(profile);
+
   const LogOutHandler = () => {
     localStorage.removeItem("profile");
+    localStorage.removeItem("task");
+    setImagePreview("");
+    setUser(null);
+    setTodo([]);
     navigate("/");
-    window.location.reload();
   };
 
   return (
@@ -31,6 +36,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 50px;
 `;
 const Logo = styled.h2`
   color: white;
@@ -61,7 +67,7 @@ const UserName = styled.h5`
   }
 `;
 const Logout = styled.button`
-  background-color: red;
+  background-color: black;
   color: white;
   width: 50px;
   height: 20px;
