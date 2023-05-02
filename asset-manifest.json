@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/UnilabTODOApp/static/css/main.b4acd22d.css",
+    "main.js": "/UnilabTODOApp/static/js/main.052390c4.js",
+    "static/media/Group 3.svg": "/UnilabTODOApp/static/media/Group 3.ab12dfb1cba621a56c21e17b4b50593c.svg",
+    "static/media/photo.svg": "/UnilabTODOApp/static/media/photo.03bcc02c9cc06bb4a1b743f40e330ae2.svg",
+    "index.html": "/UnilabTODOApp/index.html",
+    "static/media/delete.svg": "/UnilabTODOApp/static/media/delete.4237c1ab2937db0d3c7ca7eeee639b13.svg",
+    "static/media/done.svg": "/UnilabTODOApp/static/media/done.f3120965b8249bcaf024ab07eadb6168.svg",
+    "main.b4acd22d.css.map": "/UnilabTODOApp/static/css/main.b4acd22d.css.map",
+    "main.052390c4.js.map": "/UnilabTODOApp/static/js/main.052390c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4acd22d.css",
+    "static/js/main.052390c4.js"
+  ]
+}
